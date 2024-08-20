@@ -7,12 +7,14 @@ import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import HomeLayout from "./components/HomeLayout";
+import CustomError from "./components/CustomError";
 function App() {
 
 const router=createBrowserRouter([
   {
     path:"/",
     element:<HomeLayout/>,
+    errorElement:<CustomError/>,
     children:[
       {
         index:true,

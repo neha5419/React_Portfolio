@@ -1,0 +1,29 @@
+.shimmer {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(
+      to right,
+      #f6f6f6 0%,
+      #e0e0e0 20%,
+      #f6f6f6 40%,
+      #e0e0e0 60%,
+      #f6f6f6 80%
+    );
+    background-size: 800px 100%;
+    animation: shimmer 1.5s linear infinite;
+    height: 100px; /* Adjust height as needed */
+    width: 100%; /* Adjust width as needed */
+    border-radius: 5px; /* Adjust border-radius as needed */
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -400px 0;
+    }
+    100% {
+      background-position: 400px 0;
+    }
+  }
+  
+  .shimmer h1{
+    background-color:whitesmoke;
+}
